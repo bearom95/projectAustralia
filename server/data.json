@@ -1,0 +1,61 @@
+{
+    "states": [
+      {
+        "id": 1,
+        "name": "Queensland",
+        "abbreviation": "QLD",
+        "capital": "Brisbane",
+        "extension": "1.729.742 km²",
+        "attractions": "Great Barrier Reef, Fraser Island, Whitsundays or Daintree Forest ",
+        "map": "https://www.pngfind.com/mpng/TTRJTT_australia-state-map-file-adobt-states-png-wikimedia/",
+        "image1": "https://www.planetware.com/wpimages/2021/07/australia-queensland-top-attractions-dive-snorkel-great-barrier-reef-diving.jpg",
+        "image2": "https://www.planetware.com/photos-large/AUS/australia-queensland-whitsunday-islands.jpg"
+     },
+     {
+        "id": 2,
+        "name": "Tasmania",
+        "abbreviation": "TAS",
+        "capital": "Hobart",
+        "extension": "68.401 km²",
+        "attractions": "Cradle Mountain National Park, Freycinet N. Park, Tasman N. Park or Bruny Island", 
+        "map": "https://www.pngfind.com/mpng/TTRJTT_australia-state-map-file-adobt-states-png-wikimedia/",
+        "image1": "https://www.planetware.com/photos-large/AUS/australia-tasmania-cradle-mountain.jpg",
+        "image2": "https://www.planetware.com/photos-large/AUS/australia-tasmania-freycinet.jpg"
+     },
+     {
+        "id": 3,
+        "name": "Western Australia",
+        "abbreviation": "WA",
+        "capital": "Perth",
+        "extension": "2.527.013 km²",
+        "attractions": "Karijini National Park, Ningaloo Reef or Rottnest Island",
+        "map": "https://www.pngfind.com/mpng/TTRJTT_australia-state-map-file-adobt-states-png-wikimedia/",
+        "image1": "https://www.planetware.com/photos-large/AUS/australia-western-australia-esperance-cape-le-grand-national-park.jpg",
+        "image2": "https://www.planetware.com/photos-large/AUS/australia-western-australia-karajini-national-park.jpg"  
+     } 
+
+    ],
+    "animals": [
+      {
+        "id": 1,
+        "name": "Koala",
+        "kill": "Just with a overdose of tenderness",
+        "description": "Koalas are well-known for their large round head, big furry ears and big black nose. Their fur is usually grey-brown in colour with white fur on the chest, inner arms, ears and bottom. They have no fur on their nose or the palms of their paws. Koalas have particularly hard bottoms, which is similar to their closest relative, the wombat. For the koala, this feature enables them to wedge comfortably in tree forks for long periods of time, whereas the wombat uses its hard bottom as a defence mechanism.",
+        "image": "https://www.nationalgeographic.com.es/medio/2022/02/14/koala-en-estado-salvaje_e796da2b_1200x630.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Kangaroo",
+        "kill": "Roo's can kick your ass if you bother them but are inoffensive animals.",
+        "description": "All kangaroos have short hair, powerful hind legs, small forelimbs, big feet and a long tail. They have excellent hearing and keen eyesight. Depending on the species, their fur coat can be red, grey or light to dark brown.",
+        "image": "https://i.natgeofe.com/n/e4ed68fb-ff6d-4ff9-898e-daff522d798e/4121604_4x3.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Wombat",
+        "kill": "Look at this cute face, unable to kill anything",
+        "description": "Wombats are marsupials with brown, tan or grey fur and from their stubby tails to their large skulls they can measure 1.3m long and weigh 36kg.",
+        "image": "https://billiken.lat/wp-content/uploads/2022/06/wombat-SITIO.jpg"
+      }
+    ]
+  }
