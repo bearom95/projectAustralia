@@ -19,7 +19,7 @@ const printStates = (list) => {
     app.appendChild(section);
     for (const element of list ) {
         section.innerHTML += `
-        <div>
+        <div class="statePicName">
             <img src="${element.image}" alt="${element.name}">
             <h2>${element.name}</h2>
             <h3>Abbreviation: ${element.abbreviation}</h3>
