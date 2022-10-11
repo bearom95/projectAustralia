@@ -1,52 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap');
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-  font-family: 'Kanit', sans-serif;
-
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* PALETTE */
 :root {
   --background: #010203;
@@ -54,18 +7,27 @@ table {
   --primary: #d2780f;
   --secondary: #1ba79b;
   --third: #DADADA;
-  
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
 
 
 #app {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: rgb(22, 22, 22);
+  background: var(--background);
   display: flex;
-  
+  flex-wrap: wrap;
 }
 
 .homeDiv {
@@ -75,27 +37,44 @@ align-items: center;
 overflow: hidden;
 justify-content: center;
 justify-items: center;
-color: var(--third);
+background-color: var(--third);
 background: url("../ausfront/public/pictures/minimalist.jpg");
-background-position: center;
-
+background-position: bottom;
+background-size: contain;
+background-repeat: no-repeat;
 }
 
 
-h1 {
+figure {
+  height: fit-content;
+  box-sizing: border-box;
+  width: fit-content;
+  justify-items: center;
+}
+
+
+figure > h1 {
+  height: fit-content;
   font-size:xx-large;
+  width: inherit;
   color: var(--primary);
   font-weight: 500;
   font-style: italic;
   background-color: var(--third);
- 
 }
 
-h2 {
+.animalsDiv > h2 {
   font-size: x-large;
   color: var(--secondary);
   font-weight: 500;
 }
+
+.statessDiv > h2 {
+  font-size: x-large;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
 
 
 .statesDiv {
@@ -123,37 +102,15 @@ h2 {
   cursor: pointer;
   z-index: 1;
 }
-.animalsDiv > img {
- object-fit: cover;
- max-height: 100%;
- max-width: 100%;
 
+
+.statesDiv:hover {
+  color: var(--transparent);
+  /* border-color: var(--left-btn-hover-color); */
 }
 
-.animals-section {
-  width: 100vw;
-  padding: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
+.statesDiv:hover {
+  color: var(--transparent);
+  /* border-color: var(--right-btn-hover-color); */
 }
 
-
-.animalPicName {
-  box-sizing: border-box;
-  min-height: 15rem;
-  max-height: 15rem;
-  max-width: 20rem;
-  margin: 2rem;
-  
-
-}
-
-.animalPicName > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}

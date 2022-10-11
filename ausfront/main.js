@@ -1,7 +1,7 @@
 import './style.css'
 /* import { getData } from './components/services/services'; */
-import { getStates } from "./components/statesPage/statesPage";
-import { getAnimals } from './components/animalsPage/animalsPage';
+import { getStates } from "./pages/statesPage/statesPage";
+import { getAnimals } from './pages/animalsPage/animalsPage';
 /* document.querySelector('#app').innerHTML = `
 
 ` */

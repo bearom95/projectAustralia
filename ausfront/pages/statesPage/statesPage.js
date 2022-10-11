@@ -1,4 +1,6 @@
-import { getData } from "../services/services";
+import { getData } from "../../services/services";
+import { stateCard } from "../../components/stateCard/stateCard";
+import "./statesPage.css"
 
 
 export const getStates = async () => {
@@ -7,28 +9,26 @@ export const getStates = async () => {
 };
 
 const printStates = (list) => {
+    document.addEventListener("click", (evento) => {
+        const state = list.find(element => element.map === evento.path[0].className)
+        stateCard(state)
+    })
     
     const app = document.querySelector("#app");
     app.innerHTML = "";
     const section = document.createElement("section");
     section.classList.add("states-section");
-    /* const animalsTitle = document.createElement("animalsTitle");
-    animalsTitle.classList.add("animals-title"); // quiero meter un div que contenga STATES OF ASTRALIA como titulo
-    section.appendChild(animalsTitle); */
+
 
     app.appendChild(section);
     for (const element of list ) {
         section.innerHTML += `
         <div class="statePicName">
-            <img src="${element.image}" alt="${element.name}">
+            <img class="${element.map}" src="${element.map}" alt="${element.map}">
             <h2>${element.name}</h2>
-            <h3>Abbreviation: ${element.abbreviation}</h3>
-            <h3>Capital: ${element.capital}</h3>
         </div>`
     }
     
-        /* app.innerHTML = ""; */
-        /* app.appendChild(section); */
 };
 
 export const States = () => {
