@@ -5,7 +5,7 @@ import "./animalCard.css"
         app.innerHTML = "";
         app.innerHTML = `
         <figure class="card"> 
-            <img src="${item.image}">
+            <img class="${item.image}" src="${item.image}">
             <h2>${item.name}</h2>
             <div class="description">
                 <p>In a land full of dangers... Could this animal kill me?</p>
