@@ -29,10 +29,69 @@
         "capital": "Perth",
         "extension": "2.527.013 km²",
         "attractions": "Karijini National Park, Ningaloo Reef or Rottnest Island",
-        "map": "https://www.pngfind.com/mpng/TTRJTT_australia-state-map-file-adobt-states-png-wikimedia/",
+        "map": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593019/wamap_wk6yza.jpg",
         "image1": "https://www.planetware.com/photos-large/AUS/australia-western-australia-esperance-cape-le-grand-national-park.jpg",
         "image2": "https://www.planetware.com/photos-large/AUS/australia-western-australia-karajini-national-park.jpg"  
-     } 
+     },
+
+     {
+        "id": 4,
+        "name": "Northern Territory",
+        "abbreviation": "NT",
+        "capital": "Darwin",
+        "extension": "1.347.791 km²",
+        "attractions": "Litchfield National Park, Kakadu National Park, Uluru or Kata Tjuta",
+        "map": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593019/ntmap_huq0tx.jpg",
+        "image1": "https://a.travel-assets.com/findyours-php/viewfinder/images/res60/74000/74542-Litchfield-National-Park.jpg",
+        "image2": "https://evasion-online.com/image-photo/kakadu+national+park+en+australie/thumb-1920-676413.jpg"
+        },
+    
+        {"id": 5,
+        "name": "South Australia",
+        "abbreviation": "SA",
+        "capital": "Adelaide",
+        "extension": "984.321 km²",
+        "attractions": "Eyre Peninsula, Kangaroo Island, Flinders Ranges or Yorke Peninsula",
+        "map": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593019/samap_uuw2l1.jpg",
+        "image1": "https://www.exploreshaw.com/wp-content/uploads/2020/03/DSCF6779-1440x960.jpg",
+        "image2": "https://www.major.travel/portal/media/images/uploads/tours/seal_bay_conservation_park_kangaroo_island_sa.jpg"
+        },
+    
+        {"id": 6,
+        "name": "New South Wales",
+        "abbreviation": "NSW",
+        "capital": "Sydney",
+        "extension": "801.150 km²",
+        "attractions": "Byron Bay, Blue Mountains or Coffs Harbour",
+        "map": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593055/nswmap_ybimbw.jpg",
+        "image1": "https://www.tourist-destinations.com/wp-content/uploads/2013/03/ByronBayBohoChicTown__HERO_shutterstock_745877467.jpg",
+        "image2": "https://www.visitnsw.com/sites/visitnsw/files/styles/open_graph/public/2020-12/174961_0.jpg?itok=w4i-RgNy"
+        },
+    
+        {"id": 7,
+        "name": "Victoria",
+        "abbreviation": "VIC",
+        "capital": "Melbourne",
+        "extension": "227.444 km²",
+        "attractions": "Wilsons Promontory, Great Ocean Road or Grampians National Park",
+        "map": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593019/victoriamap_ijazxu.jpg",
+        "image1": "https://d19lgisewk9l6l.cloudfront.net/assetbank/Wilson_s_Promontory_National_Park_Victoria_Australia_27843.jpg",
+        "image2": "https://gostudyaus.es/wp-content/uploads/2020/03/iStock-1086241600.jpg"
+        },
+    
+        {"id": 8,
+        "name": "Australian Capital Territory",
+        "abbreviation": "ACT",
+        "capital": "Canberra",
+        "extension": "2358 km²",
+        "attractions": "Australian War Memorial or Australian National Museum",
+        "map": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593019/camberramap_i0q445.jpg",
+        "image1": "https://aws.traveler.es/prod/designs/v1/assets/940x628/137151.jpg",
+        "image2": "https://img.huffingtonpost.com/asset/5cd37faa2300003000b7c3ab.jpeg?ops=1778_1000"
+        }
+    
+
+
 
     ],
     "animals": [
@@ -44,18 +103,67 @@
         "image": "https://www.nationalgeographic.com.es/medio/2022/02/14/koala-en-estado-salvaje_e796da2b_1200x630.jpg"
       },
       {
-        "id": 1,
+        "id": 2,
         "name": "Kangaroo",
         "kill": "Roo's can kick your ass if you bother them but are inoffensive animals.",
         "description": "All kangaroos have short hair, powerful hind legs, small forelimbs, big feet and a long tail. They have excellent hearing and keen eyesight. Depending on the species, their fur coat can be red, grey or light to dark brown.",
         "image": "https://i.natgeofe.com/n/e4ed68fb-ff6d-4ff9-898e-daff522d798e/4121604_4x3.jpg"
       },
       {
-        "id": 1,
+        "id": 3,
         "name": "Wombat",
         "kill": "Look at this cute face, unable to kill anything",
         "description": "Wombats are marsupials with brown, tan or grey fur and from their stubby tails to their large skulls they can measure 1.3m long and weigh 36kg.",
         "image": "https://billiken.lat/wp-content/uploads/2022/06/wombat-SITIO.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Emu",
+        "kill": "This grumpy face animal is just curious about food, you would be really unlucky if got killed by one of these",
+        "description": "The Emu is Australia's tallest native bird, reaching between 1.6 m and 1.9 m when standing erect. Adult Emus are covered with shaggy grey-brown feathers except for the neck and head, which are largely naked and bluish-black. The wings are greatly reduced, but the legs are long and powerful. Each foot has three forward-facing toes and no hind toe. Most people see Emus along roadsides, near fences or other barriers, giving the impression of close association. However, Emus are not really social, except for young birds, which stay with their father.",
+        "image": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593609/emu.ab40226.width-800.7025164_x4ccsq.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Cassowary",
+        "kill": "Keep distance with this animal, it's claws and strong legs make it the most dangerous bird",
+        "description": "The cassowary is a large, flightless bird most closely related to the emu. Although the emu is taller, the cassowary is the heaviest bird in Australia and the second heaviest in the world after its cousin, the ostrich. It is covered in dense, two-quilled black feathers that, from a distance, look like hair. These feathers are not designed for flight but for protection in the cassowary's rainforest habitat, keeping the bird dry and safe from the sharp thorns found on many rainforest plants. Long, strong bare quills hang from the bird's tiny wings.",
+        "image": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665593737/23xp-bird-videoSixteenByNine3000_hr1wv7.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Hunstman spider",
+        "kill": "Despite their large and hairy appearance, they are inoffensive.",
+        "description": "Huntsman spiders are large, long-legged spiders. They are mostly grey to brown, sometimes with banded legs. Many huntsman spiders, have rather flattened bodies adapted for living in narrow spaces under loose bark or rock crevices. ",
+        "image": "https://media.australian.museum/media/dd/images/Some_image.width-1200.cfebc9d.jpg"
+      },
+      {
+        "id": 7,
+        "name": "King Brown Snake",
+        "kill": "You better be near a hospital if this snake bites you",
+        "description": "The King brown snake or Mulga snake (Pseudechis australis) is a highly venomous snake found over most of mainland Australia, except for the extreme south and the southeast coastal regions.",
+        "image": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665594509/Pseudechis_australis_ugmedia_ts8xxb.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Dingo",
+        "kill": "They may look like your dog, but are wild animals and if they are hungry or feel threatened, they are more likely to attack.",
+        "description": "The dingo is a medium-sized canine that possesses a lean, hardy body adapted for speed, agility, and stamina. The dingo's three main coat colourations are light ginger or tan, black and tan, or creamy white.",
+        "image": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665594796/f.elconfidencial.com_2Foriginal_2F331_2Fa63_2F8ff_2F331a638ffab833f87474983d0ae72655_v75bfo.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Salt Water Crocodile",
+        "kill": "Of course, swimming in certain places of Australia is forbidden due to these dangerous predators",
+        "description": "The Australian saltwater crocodile is the largest reptile in the world with a large head and ridges, stretching from each eye along the center of the animal's snout. Its body is covered with oval scales while the scutes are smaller than these of other reptiles.",
+        "image": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665595106/GettyImages-123529247-2a29d6c_n8poyo.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Echidna",
+        "kill": "Not at all, but be carefull of those spines",
+        "description": "spiny-coated toothless burrowing egg-laying mammal of Australia with a tapering snout and long tongue for eating ants",
+        "image": "https://res.cloudinary.com/dbdj2oecy/image/upload/v1665595157/1000_F_171556943_pNTTpJ6iSCcPR5PGSfPmZAXVzGNXu3kZ_ihqvum.jpg"
       }
     ]
   }

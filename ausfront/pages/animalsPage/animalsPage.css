@@ -1,31 +1,56 @@
 
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
 
-.animals-section {
-    width: 100vw;
-    padding: 5rem;
+  button {
+    align-self: center;
+    justify-self: center;
+    margin: 2rem;
+  }
+
+  input {
+    align-self: center;
+    justify-self: center;
+    margin: 2rem;
+  }
+
+
+.animalPicName {
+    box-sizing: border-box;
+    min-width: 15rem;
+    width: 100%;
+    margin: 2rem; 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-  }
-  
-  
-  .animalPicName {    /* contenedor de la imagen y nombre */
+    justify-content: center;  
+}
+
+.eachcard {
     box-sizing: border-box;
-    min-height: 15rem;
-    max-height: 15rem;
-    max-width: 20rem;
-    margin: 2rem;
+    height: 30rem;
+    max-width: 25rem;
+    padding: 2rem;
+    justify-content: center;
 
-  }
-  
-  .animalPicName > img {
+}
+
+.eachcard img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
-  }
+    display: flex;
+}
 
-  .animalPicName > h2 {
-    color: var(--primary);
+
+.eachcard h2 {
+    color: var(--primary); 
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
   }

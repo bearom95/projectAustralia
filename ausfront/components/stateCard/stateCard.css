@@ -1,33 +1,99 @@
-figure {
-    box-sizing: border-box;
-    min-height: 10rem;
-    max-height: 30rem;
-    max-width: 40rem;
-    margin: 4rem;
+    /*    app.innerHTML = `
+        <button><a href="javascript:location.reload(true)">Home</a></button>
+        <figure class="card"> 
+            <img src="${item.map}" alt="${item.map}">
+            <div class="info">
+                <h2>${item.name}</h2>
+                <h3>Abbreviation: ${item.abbreviation}</h3>
+                <h4>Capital: ${item.capital}</h4>
+                <h4>Extension: ${item.extension}</h4>
+                <h4>Famous for: ${item.attractions}</h4>
+            </div>
+        </figure>
+        <div class="landscapes">
+            <img src="${item.image1}">
+            <img src="${item.image2}">
+        </div>
+        `
+ */
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+ }
+
+button {
+ display: flex;
+ justify-content: center;
+ /* flex: 1 1 25rem; */
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 1.125rem;
+  cursor: pointer;
+  display: inline-block;
+  /* -webkit-transition: all .15s ease-in-out; */
+  transition: all 0.15s ease-in-out;
+  width: 7rem;
+  background-color: var(--background);
+}
+
+button > a {
+    color: var(--primary);
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    align-content: center;
+}
+
+a:hover{
+    color: var(--secondary);
+}
+
+
+
+.statecard {
+    margin: 2% 7%;
     justify-self: center;
     display: flex;
-    
+    flex-direction: row;
+    align-content: top;
+    align-items: top;
+    justify-content: center;
 }
 
-figure > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-figure > h2 {
+.statecard > img {
+    object-fit: contain;
+    display: flex;
+    max-width: 30rem;
+    max-height: 30rem;
     margin: 2rem;
-    color: var(--secondary)
-    
 }
 
-/* figure > .description {
-    max-height: 10rem;
-    margin: 2rem;
-    color: var(--primary)
+.statecard .info {
+ display: inline-block;
+ flex-wrap: wrap;
+ position: relative;
+ margin: 2rem;
+ align-items: center;
 }
 
-.description > p {
-    margin: 2rem;
-} */
+.landscapes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landscapes > img {
+    width: 45vw;
+    margin: 1rem;
+}
+
+
+

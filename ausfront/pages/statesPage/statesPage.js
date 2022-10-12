@@ -19,8 +19,10 @@ const printStates = (list, word) => {
     statePicName.innerHTML = "";
     for (const element of filteredStates) {
         statePicName.innerHTML += `
+        <div class="eachcard">
             <img class="${element.map}" src="${element.map}" alt="${element.map}">
-            <h2>${element.name}</h2>`
+            <h2>${element.name}</h2>
+        </div>`
     }
 
     statePicName.addEventListener("click", (evento) => {
@@ -33,11 +35,11 @@ export const States = () => {
     const app = document.querySelector("#app");
     app.innerHTML = "",
     app.innerHTML = `
-    <section class="states-section">
-        <button><a href="javascript:location.reload(true)">Home</a></button>
-        <input type="text" id="search" placeholder="What state are you looking for?:"/>
+        <div class="nav">
+            <button><a href="javascript:location.reload(true)">Home</a></button>
+            <input type="text" id="search" placeholder="What state are you looking for?"/>
+        </div>
         <div class="statePicName" id="statePicName">
-    </section>
     `;
 
     getStates();

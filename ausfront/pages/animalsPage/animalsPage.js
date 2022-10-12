@@ -22,13 +22,15 @@ const printAnimals = (list, word) => {
     animalPicName.innerHTML = "";
     for (const element of filteredAnimals ) {
         animalPicName.innerHTML += `
+        <div class="eachcard">
             <img class="${element.name}"src="${element.image}" alt="${element.name}">
-            <h2>${element.name}</h2>`
+            <h2>${element.name}</h2>
+        </div>`
     }
 
     animalPicName.addEventListener("click", (evento) => {
         const animal = list.find(element => element.name === evento.path[0].className)
-        animalCard(animal)
+        animalCard(animal) 
     })
      
 };
@@ -37,17 +39,17 @@ export const Animals = () => {
     const app = document.querySelector("#app");
     app.innerHTML = "",
     app.innerHTML = `
-    <section class="animals-section">
-        <button><a href="javascript:location.reload(true)">Home</a></button>
-        <input type="text" id="search" placeholder="What animal are you looking for?:"/>
+        <div class="nav">
+            <button><a href="javascript:location.reload(true)">Home</a></button>
+            <input type="text" id="search" placeholder="What animal are you looking for?"/>
+        </div>
         <div class="animalPicName" id="animalPicName">
-    </section>
     `;
 
     getAnimals();
     const searchInput = document.querySelector("#search");
     searchInput.addEventListener("input", (ev) =>
     printAnimals(animalList, ev.target.value)
-    );
+    ); 
 
 }
