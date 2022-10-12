@@ -4,6 +4,7 @@ import "./animalCard.css"
         const app = document.querySelector("#app");
         app.innerHTML = "";
         app.innerHTML = `
+        <button><a href="javascript:location.reload(true)">Home</a></button>
         <figure class="card"> 
             <img class="${item.image}" src="${item.image}">
             <h2>${item.name}</h2>

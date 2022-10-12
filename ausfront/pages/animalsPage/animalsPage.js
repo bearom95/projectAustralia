@@ -6,7 +6,7 @@ import "./animalsPage.css"
 let animalList; //estos son los datos del JSON
 
 
-/* export */ const getAnimals = async () => {
+const getAnimals = async () => {
     const animals = await getData("animals");  //getAnimals aloja los datos del json en una constante, que es la que le pasa a la funcion de print
     animalList = animals;
     //  //Ejecutamos printAnimals pasandole la lista como 1er parametro y el string vacio como palabra en el segundo
@@ -38,6 +38,7 @@ export const Animals = () => {
     app.innerHTML = "",
     app.innerHTML = `
     <section class="animals-section">
+        <button><a href="javascript:location.reload(true)">Home</a></button>
         <input type="text" id="search" placeholder="What animal are you looking for?:"/>
         <div class="animalPicName" id="animalPicName">
     </section>

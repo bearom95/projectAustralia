@@ -18,67 +18,70 @@
 }
 
 body {
-  background-color: var(--background);
   color: var(--primary);
 }
 
 
 #app {
   position: relative;
-  background: var(--background);
+  background: var(--background); 
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
 }
 
 .homeDiv {
-width: 40vw;
+width: 40%;
 height: 100vh;
+color: var(--third);
 align-items: center;
 overflow: hidden;
 justify-content: center;
 justify-items: center;
-background-color: var(--third);
 background: url("../ausfront/public/pictures/minimalist.jpg");
-background-position: bottom;
+background-color: var(--third);
+background-position: center;
 background-size: contain;
 background-repeat: no-repeat;
+display: flex;
+flex-wrap: wrap;
 }
 
 
 figure {
-  height: fit-content;
-  box-sizing: border-box;
-  width: fit-content;
-  justify-items: center;
-}
+  box-sizing: content-box;
+  border: solid red 2px;
+  display:flex;
+  flex-wrap: wrap;
+  font-display: flex;
+  font-size: flex;
+  justify-content: center; 
+  align-self: flex-start;
+} 
 
 
 figure > h1 {
-  height: fit-content;
+  box-sizing: content-box;
   font-size:xx-large;
   width: inherit;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
   background-color: var(--third);
-}
-
-.animalsDiv > h2 {
-  font-size: x-large;
-  color: var(--secondary);
-  font-weight: 500;
-}
-
-.statessDiv > h2 {
-  font-size: x-large;
-  color: var(--secondary);
-  font-weight: 500;
+  align-self: top;
+  justify-self: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 
 .statesDiv {
-  width: 30vw;
+  width: 30%;
   height: 100vh;
   left: 0;
   background: url('https://www.outbackqueensland.com.au/wp-content/uploads/2019/02/Cunnamulla_DJI_0703-rsz1048x699.jpg');
@@ -88,29 +91,67 @@ figure > h1 {
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-filter: grayscale(100%) !important;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .animalsDiv {
-  width: 30vw;
+  width: 30%;
   height: 100vh;
   right: 0;
   background: url('https://media.4-paws.org/0/a/2/6/0a26e71e08bee0fdbe3b71604dadd515c7fbc5e6/Koala-4000x2769-1920x1329.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 40%, 0;
+  background-position: 50%, 0;
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-filter: grayscale(100%) !important;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 
 
 .statesDiv:hover {
-  color: var(--transparent);
-  /* border-color: var(--left-btn-hover-color); */
+  -webkit-filter: grayscale(0) !important;
+  -webkit-transition: all 0.4s ease-in-out;
+/*   background-size: 300%; */
 }
 
-.statesDiv:hover {
-  color: var(--transparent);
-  /* border-color: var(--right-btn-hover-color); */
+.animalsDiv:hover {
+  -webkit-filter: grayscale(0) !important;
+  -webkit-transition: all 0.4s ease-in-out;
 }
+
+/* .animalsDiv > h2 {
+  font-size: large;
+  color: var(--secondary);
+  font-weight: 600;
+  align-self: top;
+  justify-self: center;
+  justify-content: center;
+  align-content: center;
+} */
+
+/* .statessDiv > */ h2 {
+  box-sizing: content-box;
+  font-size:xx-large;
+  width: inherit;
+  color: var(--primary);
+  font-weight: 600;
+  justify-self: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+
 

@@ -2,10 +2,9 @@ import { getData } from "../../services/services";
 import { stateCard } from "../../components/stateCard/stateCard";
 import "./statesPage.css" 
 
-
 let statesList;
 
-/* export */ const getStates = async () => {
+ const getStates = async () => {
     const states = await getData("states");  //getStates aloja los datos del json en una constante, que es la que le pasa a la funcion de print
     statesList = states;
     printStates(states, "");
@@ -35,6 +34,7 @@ export const States = () => {
     app.innerHTML = "",
     app.innerHTML = `
     <section class="states-section">
+        <button><a href="javascript:location.reload(true)">Home</a></button>
         <input type="text" id="search" placeholder="What state are you looking for?:"/>
         <div class="statePicName" id="statePicName">
     </section>
@@ -47,5 +47,4 @@ export const States = () => {
     );
 
 }
-    
  

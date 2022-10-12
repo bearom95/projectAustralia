@@ -11,3 +11,4 @@ statesDiv.addEventListener("click", States);
 
 const animalsDiv = document.querySelector("#animalsDiv");
 animalsDiv.addEventListener("click", Animals);
+
