@@ -17,9 +17,9 @@ const printAnimals = (list, word) => {
     const filteredAnimals = list.filter((element) =>
     element.name.toLowerCase().includes(word.toLowerCase())
   );
+
     const animalPicName = document.querySelector(".animalPicName");
     animalPicName.innerHTML = "";
-
     for (const element of filteredAnimals ) {
         animalPicName.innerHTML += `
             <img class="${element.name}"src="${element.image}" alt="${element.name}">
@@ -38,7 +38,7 @@ export const Animals = () => {
     app.innerHTML = "",
     app.innerHTML = `
     <section class="animals-section">
-        <input type="text" id="search" placeholder="What are you looking for?:"/>
+        <input type="text" id="search" placeholder="What animal are you looking for?:"/>
         <div class="animalPicName" id="animalPicName">
     </section>
     `;
